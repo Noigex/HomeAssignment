@@ -32,7 +32,6 @@ Home assignment.
 
   - [End-to-End Test](#end-to-end-test)
   - [Error Handling](#error-handling)
-  - [Front-End app Angular](#front-end-app-angular)
 
 ## 1. Install Dependencies
 
@@ -134,9 +133,3 @@ The script will automatically use the testing database and its `.env.test` varia
 
 Error handling is handled globally in the app on [prisma-client-exception.filter.ts](./src//prisma-client-exception//prisma-client-exception.filter.ts) to avoid unnecessarily bloated service's "try catch" blocks,
 There's also use of `Validation Pipes` in the dto's files in students folder and courses folder.
-
-## Front-End app Angular
-
-I Made an Angular app which give's the ability to interact with the Back-end endpoints of the NestJS home assignment.
-
-Check it out in: [Client](../client/)

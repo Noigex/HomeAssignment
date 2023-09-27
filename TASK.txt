@@ -1,0 +1,55 @@
+Student Developer - Home Assignment
+
+Duration: 
+2-3 hours (adjustable as per your requirements)
+
+Objective: 
+Create a RESTful API using NestJS to manage student resources, including their personal information and the courses they took every year. Use an SQL database to store student and course data.
+
+Instructions:
+• Environment Setup: Ensure that you have Node.js installed on your computer. You may also use npm (Node Package Manager) for installing any necessary packages.
+• Plagiarism Warning: This is an individual test, and any form of plagiarism or code sharing will result in disqualification.
+
+Task: Building a Student and Course Management API with SQL Database
+
+Resources:
+• Student information:
+  • student_id
+  • first_name
+  • last_name
+  • address
+• Course information:
+  • course_name
+  • year
+
+Think about how to build the tables and relations between them. Think about the field's type and characteristics. Build the migration files accordingly to create the tables.
+
+API Requirements:
+
+Students Resource:
+• GET /students: Retrieve a list of all students' personal information, including how many courses they took. Have a filter by year
+• GET /students/:student_id: Retrieve a specific student's personal information and the number of courses they took. Have a filter by year
+• POST /students: Create a new student.
+• PUT /students/:student_id: Update a student's personal information.
+• DELETE /students/:student_id: Delete a student and all related course records.
+
+Courses Resource:
+• GET /courses: Retrieve a list of all courses.
+• GET /courses/:course_name: Retrieve information about a specific course.
+• POST /courses: Create a new course for a student.
+• PUT /courses/:course_name: Update course information.
+• DELETE /courses/:course_name: Delete a course.
+
+Additional Instructions:
+• Use NestJS to build the API.
+• Set up a SQL database (e.g., PostgreSQL or MySQL) to store student and course data.
+• Create a connection to the database using an appropriate library (e.g., TypeORM).
+• Implement proper error handling and validation for API requests.
+• Use migrations to create the database tables.
+
+Grading:
+• Proper setup of SQL database and tables: 10 points
+• Implementation of Student and Course APIs: 60 points
+• Error handling and validation: 10 points
+• Use of appropriate libraries: 10 points
+• Documentation and code organization: 10 points
